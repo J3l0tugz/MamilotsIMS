@@ -1,0 +1,90 @@
+body {
+    background-color: #232732 !important;
+    overflow-x: hidden;
+
+}
+
+/* .magicpattern {
+    background-size: 50% ;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3CradialGradient id=%22b%22 r=%22100%25%22 cx=%2250%25%22 cy=%2250%25%22%3E%3Cstop offset=%220%25%22 stop-color=%22%2334596b%22%2F%3E%3Cstop offset=%22100%25%22 stop-color=%22%231a1f28%22%2F%3E%3C%2FradialGradient%3E%3CclipPath id=%22a%22%3E%3Cpath fill=%22currentColor%22 d=%22M804 650.5q54 150.5-83.5 234t-278.5 22Q301 845 192.5 748T87 501q3-150 85-288.5T412.5 85Q571 96 688 170t89.5 202Q750 500 804 650.5Z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg clip-path=%22url(%23a)%22%3E%3Cpath fill=%22url(%23b)%22 d=%22M804 650.5q54 150.5-83.5 234t-278.5 22Q301 845 192.5 748T87 501q3-150 85-288.5T412.5 85Q571 96 688 170t89.5 202Q750 500 804 650.5Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+} */
+
+#text{
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    word-break: break-word;
+    font-family: 'Roboto';
+    color: #feffff;
+    font-weight: lighter;
+    font-size: 1.1vw;
+}
+
+#login-text {
+    color: #232732;
+    font-family: 'Roboto';
+    font-weight: 900;
+}
+
+label {
+    font-family: 'Roboto';
+    font-weight: bold;
+}
+
+.label {
+    font-size: 1vw;
+    font-family: "Roboto";
+    color: #feffff;
+}
+
+.form-check-label {
+    font-size: small;
+}
+
+.btn {
+    font-family: 'Roboto' !important;
+    font-weight: bold !important;
+}
+
+.container {
+    width: 70%;
+}
+
+.container img {
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+
+.rounded {
+    border-radius: 30px 0 0 30px !important;
+}
+
+@media (max-width: 992px) {
+    .my-custom-row {
+        height: 300px;
+    }
+
+    .label {
+        font-size: 3vw;
+    }
+
+    .rounded {
+        border-radius: 30px 30px 30px 30px !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    .main-container {
+        align-items: center !important;
+    }
+}
+
+.container-fluid.d-flex.justify-content-end.align-items-lg-center {
+    padding: 0rem;
+
+    @media (max-width: 991.98px) {
+      padding: 3rem;
+    }
+}

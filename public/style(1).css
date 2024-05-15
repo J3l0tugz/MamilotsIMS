@@ -1,0 +1,124 @@
+.custom-nav-link {
+    transition: background-color 0.3s ease !important; /* Smooth transition effect */
+}
+
+.custom-nav-link:hover {
+    background-color: #d2d5d5 !important; /* Change this to your desired hover color */
+}
+
+.btn-add {
+    box-shadow: 0px 2px 4px gray;
+    margin-right: 5px;
+    border: 0px !important;
+}
+
+.btn-primary {
+    transition: background-color 0.3s ease !important; /* Smooth transition effect */
+}
+
+.btn-primary:hover {
+    background-color: #0096c0 !important; /* Change this to your desired hover color */
+}
+
+.sidebar-option {
+    background-color: #fff;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 0 1px 7px rgb(52, 52, 52);
+}
+
+.card {
+    box-shadow: 0 0 8px 0 rgb(52, 52, 52) !important;
+    border-radius: 8px !important;
+}
+
+.nav-item.active .custom-nav-link {
+    background-color: #76abae;
+}
+
+.sidebar .nav-item.active .nav-link {
+    font-weight: 500 !important;
+}
+
+/* Submit button */
+#myBtn {
+    border-radius: .35rem;
+    border: 0 !important;
+    box-shadow: 0 0.125rem 0.25rem 0 rgba(58, 59, 69, 0.2) !important;
+    background-color: #9458f3;
+    font-size: 14px;
+}
+
+#myBtn-reset {
+    border-radius: .35rem;
+    border: 0 !important;
+    box-shadow: 0 0.125rem 0.25rem 0 rgba(58, 59, 69, 0.2) !important;
+    background-color: #9458f3;
+    font-size: 14px;
+}
+
+/* ADD MODAL */
+/* The Modal (background) */
+#myBtn-add {
+    border: 0 !important;
+    box-shadow: 0 0.125rem 0.25rem 0 rgba(58, 59, 69, 0.2) !important;
+    background-color: #9458f3;
+    font-size: 14px;
+}
+
+
+.modal-add {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    padding-top: 6vw; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content-add {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 8px;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    align-items: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.close:hover,
+.close:focus {
+    color: #222831;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.add-input {
+    background-color: #aaaaaa32 !important;
+}
+
+button {
+    box-shadow: 0 0.125rem 0.25rem 0 rgba(58, 59, 69, 0.2) !important;
+}
+
+form.user .form-control-user {
+    border-radius: 8px;
+    font-size: medium;
+}
+
+.hide {
+    display: none;
+}
