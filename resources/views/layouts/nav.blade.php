@@ -8,8 +8,6 @@
                 SYSTEM</sub> </div>
     </a>
 
-    <div style="margin-top: -6px;"><br></div>
-
     <!-- Nav Item - Dashboard -->
     <li class="nav-item mt-5 @if (Route::is('dashboard.index')) active @endif"">
         <div class="custom-nav-link sidebar-option shadow">

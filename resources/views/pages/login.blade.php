@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="login.css">
     <link href='https://fonts.googleapis.com/css?family=Lexend' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="{{ ('..\media\mamilots_icon.png') }}">
+    <link rel="icon" type="image/x-icon" href="{{ '..\media\mamilots_icon.png' }}">
 </head>
 
 <body>
@@ -87,6 +87,24 @@
             </div>
         </div>
     </div>
+
+    <script>
+        // Generate a unique session key for this tab if not already set
+        if (!localStorage.getItem('custom_session_key')) {
+            localStorage.setItem('custom_session_key', 'sess_' + Math.random().toString(36).substr(2, 9));
+        }
+        // Add the session key to the login form as a hidden input
+        document.addEventListener('DOMContentLoaded', function() {
+            var form = document.querySelector('form[action="{{ route('login') }}"]');
+            if (form) {
+                var input = document.createElement('input');
+                input.type = 'hidden';
+                input.name = 'custom_session_key';
+                input.value = localStorage.getItem('custom_session_key');
+                form.appendChild(input);
+            }
+        });
+    </script>
 </body>
 
 </html>

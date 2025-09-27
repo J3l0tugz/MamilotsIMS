@@ -16,7 +16,6 @@ class DashboardController extends Controller
         $totalMaterial = DashboardController::totalMaterials();
 
         if (Auth::user()->role === 1) {
-
             return view('pages.manager.dashboard', compact('stock', 'activeProduct', 'totalProduct', 'totalMaterial'));
         } elseif (Auth::user()->role === 0) {
             return view('pages.employee.dashboard', compact('stock', 'activeProduct', 'totalProduct', 'totalMaterial'));
@@ -56,14 +55,16 @@ class DashboardController extends Controller
         return $productCount;
     }
 
-    public function activeProducts(){
+    public function activeProducts()
+    {
         $sumQuantity = Product::sum('quantity');
-        return($sumQuantity);
+        return ($sumQuantity);
     }
 
-    public function totalMaterials(){
+    public function totalMaterials()
+    {
         $sumMaterial = Material::count();
-        return($sumMaterial);
+        return ($sumMaterial);
     }
 
 }
