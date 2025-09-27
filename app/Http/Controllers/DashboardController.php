@@ -33,7 +33,7 @@ class DashboardController extends Controller
             ->count();
         $outStockCount = Product::where('quantity', '=', 0)->count();
 
-        $productCount = Product::count();
+        $productCount = Product::count() || 1;
 
         $highStockPercent = ($highStockCount * 100) / $productCount;
         $nearLowPercent = ($nearLowCount * 100) / $productCount;
